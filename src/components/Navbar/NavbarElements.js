@@ -73,11 +73,17 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   height: 100%;
   cursor: pointer;
   &.active{
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #0cbcbc;
+  }
+  @media screen and (max-width: 900px){
+    padding: 0 0.8rem;
+  }
+  @media screen and (max-width: 800px){
+    padding: 0 0.5rem;
   }
 `;
 export const NavBtn = styled.nav`
@@ -89,10 +95,11 @@ export const NavBtn = styled.nav`
 `;
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: #01bf71;
+  background: #e03b09;
+  font-weight: bold;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #010606;
+  color: #fff;
   font-size: 16px;
   outline: none;
   border: none;
