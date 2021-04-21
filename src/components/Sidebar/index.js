@@ -5,22 +5,21 @@ import {
   SidebarContainer,
   SidebarLink,
   SidebarMenu,
-
-
-  SidebarRoute, SidebarWrapper,
+  SidebarRoute,
+  SidebarWrapper,
   SideBtnWrap
 } from './SidebarElements';
 
-const Sidebar = () => {
+const Sidebar = ({isOpen, toggle}) => {
   return (
-    <SidebarContainer>
-      <Icon>
+    <SidebarContainer isOpen={isOpen} onClick={toggle} >
+      <Icon onClick={toggle} >
         <CloseIcon/>
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to="about">Rólunk</SidebarLink>
-          <SidebarLink to="discover">Tevékenyságek</SidebarLink>
+          <SidebarLink to="discover">Tevékenységek</SidebarLink>
           <SidebarLink to="sevices">Szolgáltatások</SidebarLink>
           <SidebarLink to="signup">Regisztráció</SidebarLink>
         </SidebarMenu>
