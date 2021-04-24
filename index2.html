@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=500, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="icon" type="image/png" href="pic/k__icon__blue.png">
+  <title>Köröstárkány-REF</title>
+</head>
+
+
+
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v10.0" nonce="FQyxgIi4"></script>
+
+
+  <!--------------------------NAV__LINKS / NAVBAR-------------------------------------------------------------------------------------------->
+  <div class="nav">
+    <div class="navbar">
+      <h4><b>
+        <div class="fulfilling-square-spinner" :style="spinnerStyle">
+          <div class="spinner-inner" :style="spinnerInnerStyle"></div>
+        </div>
+        <i id="k__icon" class="fab fa-kickstarter"></i>
+        öröstárkányi református </b><b>gyülekezet
+      </b></h4>
+      <b class="titleText__new" style="display: none;">köröstárkány</b>
+      <div class="mobil__icon">
+        <div class="fulfilling-square-spinner" :style="spinnerStyle">
+          <div class="spinner-inner" :style="spinnerInnerStyle"></div>
+        </div>
+        <i id="k__icon" class="fab fa-kickstarter"></i>
+        <b>REF</b>
+      </div>
+      <div class="radio">
+        <div class="radio__title"><br><b>HARANGSZÓ</b></br><b>RÁDIÓ</b></div>
+        <i id="play" class="fa fa-play-circle" aria-hidden="true" onclick="playRadio()"></i>
+        <i id="pause" class="fa fa-pause-circle" aria-hidden="true" onclick="pauseRadio()"></i>
+      </div>
+      <div class="icons">
+        <i id="line__icon" class="fad fa-grip-lines-vertical"></i>
+        <a id="facebook__icon" class="fab fa-facebook-square" href="https://www.facebook.com/groups/1590480657872653" style="color: #535353"></a>
+        <a id="youtube__icon" class="fab fa-youtube" href="https://www.youtube.com/channel/UCZ8RLE8Bel6hn0qFqY09VXw/videos?view=0&sort=p&flow=grid" style="color: #535353"></a>
+        <a id="user__icon" class="fa fa-user-circle" aria-hidden="true" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" ></a>
+      </div>
+    </div>
+    <ul class="nav__links">
+      <li class="l1" onclick="window.location.href='index.html'"><a class="a1">Főoldal</a></li>
+      <li class="l2" onclick="window.location.href='alkalmaink.html'" ><a class="a2">Alkalmaink</a></li>
+      <li class="l3" onclick="window.location.href='hirdetesek.html'"><a class="a3">Hírdetések</a></li>
+      <li class="l4" onclick="window.location.href='egyhazkozsegunkrol.html'"><a class="a4">Egyházköségünkről</a></li>
+      <li class="l5" onclick="window.location.href='felvetelek.html'"><a class="a5">Felvételek</a></li>
+      <li class="l6" onclick="window.location.href='elerhetoseg.html'"><a class="a6">Elérhetőség</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </div>
+
+  <!--------------------------NAV__LINKS / NAVBAR-------------------------------------------------------------------------------------------->
+  <!--------------------------TTITLE--------------------------------------------------------------------------------------------------->
+  <div class="first__mainpage">
+    <h1>ISTEN HOZOTT</h1>
+  </div>
+  <div class="mainpage">
+    <div class="mainpage__first">
+      <div class="title">
+        <h5>
+          <b>Tekintetem a hegyekre emelem:
+          <br>Honnan jön segítségem?</br>
+          Segítségem az Úrtól jön,
+          <br>aki az eget és a földet alkotta.</br></b>
+        </h5>
+        <b class="rotated">Zsoltárok 121,1-2</b>
+      </div>
+     </div>
+    <div class="mainpage__aside">
+      <h2>Közös alkalmaink</h2>
+      <h3 class="h3__first"><u>Vasárnapi Istentiszteletek</u><br> 10:20 órai kezdéssel</br>16:20 órai kezdéssel<br> templomunkban</br></h3>
+      <h3 class="h3__center"><u>Hétfőtől szombatig áhitatok</u><br>9:00 órai kezdéssel</br>a parókián</h3>
+      <h3 class="h3__last" style="padding-bottom: 0px"><u>Szerdai gyülekezeti Bibliaóra</u><br>19:00 órai kezdéssel</br>templomunkban</h3>
+      <h3 class="h3__last" style="padding-top: 5px; padding-bottom: 10px; border-top: 2px solid rgba(255,255,255, .07)"><u>
+        <button onclick="window.location.href='alkalmaink.html'"><a>
+          TOVÁBBI ALKALMAK</a>
+        </button></u></h3>
+    </div>
+  </div>
+  <!--------------------------TITLE--------------------------------------------------------------------------------------------------->
+  <!--------------------------CONTENT--------------------------------------------------------------------------------------------------->
+  <div class="content">
+    <main>
+      <div class="main__flex">
+        <div class="content__title"><h1>ISTEN SZERET TÉGED</h1></div>
+        <div class="content__bottom"><h1>Köröstárkány madártávlatból</h1></div>
+      </div>
+      <div class="radio">
+        <div class="radio__title" id="content__radio__title" ><br><b>HARANGSZÓ</b></br><b>RÁDIÓ</b></div>
+        <i id="play" id="content__play" class="fa fa-play-circle" aria-hidden="true" onclick="playRadio()"></i>
+        <i id="pause" id="content__pause" class="fa fa-pause-circle" aria-hidden="true" onclick="pauseRadio()"></i>
+      </div>
+      <div class="katt"></div>
+    </main>
+  </div>
+  <div class="gray__box">
+  </div>
+  <!--------------------------CONTENT--------------------------------------------------------------------------------------------------->
+  <!--------------------------FOOTER--------------------------------------------------------------------------------------------------->
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>Lehetőségek</h2>
+          <a title="Jelenleg méb szerkesztés alatt álló oldal, nem érhető el!" href="notfound.html">Közmunka</a>
+          <a title="Jelenleg méb szerkesztés alatt álló oldal, nem érhető el!" href="notfound.html">Szeretetszolgálat</a>
+          <a title="Jelenleg méb szerkesztés alatt álló oldal, nem érhető el!" href="notfound.html">Adakozás</a>
+          <a title="Jelenleg méb szerkesztés alatt álló oldal, nem érhető el!" href="notfound.html">Egyéb</a>
+        </div>
+        <div class="footer__link--items">
+          <h2>Elérhetőségek</h2>
+          <a href="https://goo.gl/maps/b2boGysFkXmcNqfM8" target="_blank">RO,Tărcaia,nr.56</a>
+          <a href="https://goo.gl/maps/b2boGysFkXmcNqfM8" target="_blank">Jud. Bihor, 417575</a>
+          <a href="sledelp@gmail.com">sledelp@gmail.com</a>
+          <a >0773-325-322</a>
+        </div>
+      </div>
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>Felvételek</h2>
+          <a href="felvetelek.html/youtube">Istentiszteletek</a>
+          <a href="/">Ifjúsági énekek</a>
+          <a href="/">Kórusénekek</a>
+          <a href="/">Esti áhitatok</a>
+        </div>
+        <div class="footer__link--items">
+          <h2>H. Rádió</h2>
+          <a href="https://refszatmar.eu/audio/radioszatmar/harangszoradio_486.mp3" target="_blank" id="h__486">486. adás</a>
+          <a href="https://refszatmar.eu/audio/radioszatmar/harangszoradio_485.mp3" target="_blank" id="h__485">485. adás</a>
+          <a href="https://refszatmar.eu/audio/radioszatmar/harangszoradio_484.mp3" target="_blank" id="h__484">484. adás</a>
+          <a href="https://refszatmar.eu/audio/radioszatmar/harangszoradio_483.mp3" target="_blank" id="h__483">483. adás</a>
+        </div>
+      </div>
+    </div>
+    <div class="social__media">
+      <div class="sotial__media--wrap">
+        <div class="footer__logo">
+          <a href="/" id="footer__logo">
+            <i id="k__icon2" class="fab fa-kickstarter"></i><b>REF</b>
+          </a>
+        </div>
+        <p class="website__rights">© REF-T. 2021 by Sebestyén Márton</p>
+        <div class="social__icons">
+          <a href="https://www.facebook.com/groups/1590480657872653" class="social__icon--link" target="_blank">
+            <i class="fab fa-facebook"> </i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCZ8RLE8Bel6hn0qFqY09VXw/videos?view=0&sort=p&flow=grid" class="social__icon--link" target="_blank">
+            <i class="fab fa-youtube"> </i>
+          </a>
+          <a href="elerhetoseg.html" class="social__icon--link" target="_blank">
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+          </a>
+          <a href="https://goo.gl/maps/b2boGysFkXmcNqfM8" class="social__icon--link" target="_blank">
+            <i class="fas fa-map-marker-alt    "></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------------------------NAPIIGE--------------------------------------------------------------------------------------------------->
+  <div class="napiige__container">
+    <svg class="heptagon" xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="#15787850" class="bi bi-heptagon-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.779.052a.5.5 0 0 1 .442 0l6.015 2.97a.5.5 0 0 1 .267.34l1.485 6.676a.5.5 0 0 1-.093.415l-4.162 5.354a.5.5 0 0 1-.395.193H4.662a.5.5 0 0 1-.395-.193L.105 10.453a.5.5 0 0 1-.093-.415l1.485-6.676a.5.5 0 0 1 .267-.34L7.779.053z"/></svg>
+    <div class="heptagon__text">
+      <b style="display: none;" >Napi</b>
+      <br><b><i>IGE</i></b></br>
+      <b style="display: none;" >és</b>
+    </div>
+    <b class="gondolatok" ><br>gondolatok</b></br>
+    <div class="napiige-box"></div>  
+    <div class="napiige-box1"></div>  
+    <div class="napiige-box2"></div>
+    <div class="napiige">
+      <div class="fb-post" 
+            data-href="https://www.facebook.com/napiigegondolat/posts/259221849019040"
+            data-width="350" style="width: 100%; height: 100%;">
+      </div>
+    </div>
+  </div>
+  <!--------------------------NAPIIGE-------------------------------------------------------------------------------------------------->
+  <!--------------------------FOOTER--------------------------------------------------------------------------------------------------->
+  
+      <!-- <div class="main2">
+      <div class="napiige">
+        <div class="fb-post" 
+              data-href="https://www.facebook.com/napiigegondolat/posts/259221849019040"
+              data-width="350" style="width: 100%; height: 100%;">
+        </div>
+      </div>
+    </div> -->
+
+  <button id="scrollTopId" style="display: none; position:fixed; top:200px; right:0; left:100px; padding: 10px 50px; font-size: 30px; color:#157878; background-color: #ffc21c; z-index: 100;" ><b>scrollTop=</b></button>
+
+  <img src="pic/pic7.jpg" alt="HIBA!!! INNEN HIÁNYZIK A HÁTTÉRKÉP!!!" id="body__image">
+  <img src="pic/pic9.png" alt="HIBA!!! INNEN HIÁNYZIK A HÁTTÉRKÉP!!!" id="body__image__fog">
+  <audio id="radio" controls><source src="https://refszatmar.eu/audio/radioszatmar/harangszoradio_486.mp3" type="audio/mp3" id="h__radio__486"></audio>  <div class="radio__button__click"></div>  <i id="button__click" class="fas fa-pause" style="font-size: 18px"></i> 
+    <script src="app.js"></script>
+ 
+
+    <div id="id01" class="modal">
+      <form id="id01__box" class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="pic/login5.svg" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+          <label for="uname"><b style="color: #f3f3f3">Felhasználónév:</b></label>
+          <input type="felhasznalonev" placeholder="Enter Username" name="uname" required>
+          <label for="psw"><b style="color: #f3f3f3">Jelszó:</b></label>
+          <input type="jelszo" placeholder="Enter Password" name="psw" required>
+          <button type="submit">Belépés</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> 
+            <b style="color: #f3f3f3; font-weight: 300;">Jegyezz meg</b>
+          </label>
+        </div>
+        <div class="container" style="background-color:#f3f3f3">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Mégsem</button>
+          <span class="psw">Elfelejtetted a <a href="notfound.html">jelszavadat?</a></span>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
