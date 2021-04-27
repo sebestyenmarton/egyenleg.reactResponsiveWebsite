@@ -36,7 +36,7 @@ const HeroSection = () => {
             primary='true'
             dark='true'
           >
-              Nekikezdek {hover ? <ArrowForward/> : <ArrowRight />}
+              Nekikezdek { hover ? <ArrowForward/> : <ArrowRight/> }
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
