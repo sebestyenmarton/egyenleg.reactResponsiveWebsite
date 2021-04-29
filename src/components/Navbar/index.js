@@ -28,13 +28,13 @@ const Navbar = ({toggle}) => {
               <NavLinks to="about">Rólunk</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="discover">Tevékenységek</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="sevices">Szolgáltatások</NavLinks>
+              <NavLinks to="services">Szolgáltatások</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="signup">Regisztráció</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="discover">Egyéb</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
