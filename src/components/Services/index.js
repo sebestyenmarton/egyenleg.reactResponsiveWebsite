@@ -15,22 +15,22 @@ const Services = () => {
   return (
     <>
       <ServicesContainer id="discover">
-        <ServicesH1>Our Services</ServicesH1>
+        <ServicesH1>Egyéb előnyeink</ServicesH1>
         <ServicesWrapper>
           <ServicesCard>
             <ServicesIcon src={Icon1}/>
-            <ServicesH2>Reduce expenses</ServicesH2>
-            <ServicesP>We help your fees and increase your overall revenue.</ServicesP>
+            <ServicesH2>Csökkentse a kiadásait</ServicesH2>
+            <ServicesP>Nálunk megszabadul az átutalási költségektől és ezzel növeljük a bankszámláján maradt vagyonát.</ServicesP>
           </ServicesCard>
           <ServicesCard>
             <ServicesIcon src={Icon2}/>
-            <ServicesH2>Wirtual offices</ServicesH2>
-            <ServicesP>You can acces our platform online anywhere in the world.</ServicesP>
+            <ServicesH2>Virtuális szolgáltatás</ServicesH2>
+            <ServicesP>Tranzakciót hajthat végre a világ bármely pontjára és a világ bármely pontjáról internethozzáféréssel.</ServicesP>
           </ServicesCard>
           <ServicesCard>
             <ServicesIcon src={Icon3}/>
-            <ServicesH2>Premium Benefits</ServicesH2>
-            <ServicesP>Unlock our special membership card that return 5% cash back.</ServicesP>
+            <ServicesH2>Prémium lehetőség</ServicesH2>
+            <ServicesP>Szerezze meg különleges tagsági kártyánkat, mellyel minden átutaláskor 5%-ot visszakap a bankszámlájára.</ServicesP>
           </ServicesCard>
         </ServicesWrapper>
       </ServicesContainer>

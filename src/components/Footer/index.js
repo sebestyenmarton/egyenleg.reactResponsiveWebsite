@@ -6,7 +6,9 @@ import {
   FaTwitter,
   FaYoutube
 } from 'react-icons/fa';
+import { animateScroll as scroll } from 'react-scroll';
 import {
+  DeveloperName,
   FooterContainer,
   FooterLink,
   FooterLinkItems,
@@ -22,7 +24,13 @@ import {
   WebsiteRights
 } from './FooterElements';
 
+
 const Footer = () => {
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <FooterContainer>
       <FooterWrap>
@@ -62,10 +70,16 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to='/'>
+            <SocialLogo to='/' onClick={toggleHome}>
               Egyenleg
             </SocialLogo>
-            <WebsiteRights>Egyenleg © {new Date().getFullYear()} by Sebestyén Márton</WebsiteRights>
+            <WebsiteRights>
+              Egyenleg © {year + "." + month + "." + day} - {' '}
+              <DeveloperName href="//www.linkedin.com/in/sdgmarton" >
+                S.Marton 
+              </DeveloperName>
+              {', '}Frontend Developer
+            </WebsiteRights>
             <SocialIcons>
               <SocialIconLink href="//www.facebook.com/" target="_blank" aria-label="Facebook">
                 <FaFacebook />
@@ -89,5 +103,10 @@ const Footer = () => {
     </FooterContainer>
   )
 };
+
+var day = new Date().getDate();
+var month = new Date().getMonth()+1;
+var year = new Date().getFullYear();
+
 
 export default Footer;

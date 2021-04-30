@@ -88,11 +88,16 @@ export const SocialLogo = styled(Link)`
   align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
+  &:hover{
+    color: #e03b09;
+    transition: 0.3s ease-in-out;
+  }
 `;
 
 export const WebsiteRights = styled.small`
   color: #fff;
-  margi-bottom: 16px;
+  margin-bottom: 16px;
+  text-decoration: none;
 `;
 
 export const SocialIcons = styled.div`
@@ -105,4 +110,18 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+  &:hover{
+    color: #e03b09;
+    transition: 0.3s ease-in-out;
+  }
+`;
+
+export const DeveloperName = styled.a`
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  &:hover{
+    color: #e03b09;
+    transition: 0.3s ease-in-out;
+  }
 `;

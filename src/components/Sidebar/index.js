@@ -19,9 +19,9 @@ const Sidebar = ({isOpen, toggle}) => {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to="about" onClick={toggle} >Rólunk</SidebarLink>
-          <SidebarLink to="discover" onClick={toggle} >Tevékenységek</SidebarLink>
-          <SidebarLink to="sevices" onClick={toggle} >Szolgáltatások</SidebarLink>
+          <SidebarLink to="services" onClick={toggle} >Szolgáltatások</SidebarLink>
           <SidebarLink to="signup" onClick={toggle} >Regisztráció</SidebarLink>
+          <SidebarLink to="discover" onClick={toggle} >Egyéb</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute to="/signin" >Belépés</SidebarRoute>
