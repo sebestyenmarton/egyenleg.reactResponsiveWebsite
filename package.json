@@ -1,5 +1,6 @@
 {
   "name": "mypay",
+  "homepage": "https://reftarkany.hu/OtherWebPages/egyenleg/", 
   "version": "0.1.0",
   "private": true,
   "dependencies": {
